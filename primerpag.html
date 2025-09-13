@@ -1,16 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="profile" href="http://gmpg.org/xfn/11"> <!--esta etiqueta se usa para definir un perfil de metadatos para la página, es algo técnico que ya no es muy común-->
-    <link rel="pingback" href="https://tiendadecafe.com.ar/xmlrpc.php"> <!--sirve para notificar a otros blogs cuando los enlazás -->
-
-    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' /> <!-- Entiendo que es una etiqueta para ser "amigo" de Google y decirle exactamente cómo quiero que muestre mi página en los resultados-->
-    <!-- <style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style> según tengo entendido es para CSS pero este tp se centra en html asíq solo comentaré esto hehe-->
-    <title>Home - Tienda de Café</title>
-    <meta name="description" content="Te ofrecemos una experiencia diferente. Disfruta del aroma y sabor de nuestros cafes, y dejate tentar por nuestros platos dulces y salados. Tambien podes recibir en tu casa, nuestros cafe molido o en grano, y nuestras nuevas capsulas!" />
-    <link rel="canonical" href="https://tiendadecafe.com.ar/" /> <!-- Por lo que averigué, esto va en el head para los buscadores como Google sepan como describir mi sitio en los resultados-->
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Home - Tienda de Café | Prototipo</title>
 </head>
 <body>
     <!-- Header con navegación principal -->
@@ -18,8 +10,8 @@
         <h1>TIENDA DE CAFÉ</h1> <!-- Logo/título principal -->
         <nav> <!-- Navegación principal horizontal -->
             <ul> 
-                <li><a href="#nuestro-cafe">NUESTRO CAFÉ</a></li> 
-                <li><a href="#tutoriales">TUTORIALES</a></li> 
+                <li><a href="cafe-nuestro.html" target="_blank">NUESTRO CAFÉ</a></li> 
+                <li><a href="tutoriales.html" title="Tutoriales" target="_blank">TUTORIALES</a></li> 
                 <li><a href="#locales">LOCALES</a></li> 
                 <li><a href="#menu">NUESTRO MENÚ</a></li>
                 <li><a href="#trabajo">TRABAJÁ CON NOSOTROS</a></li> 
@@ -44,15 +36,15 @@
             <h2>Nuestros Productos</h2>
             <!-- Aquí iría la información sobre los tipos de café -->
             <article>
-                <h3><u>Café Brasil || Café Barista || Café Minka || Café Colombia || Café Scegliere || Café Descafeinado</u></h3>
+                <h3>Café Brasil || Café Barista || Café Minka || Café Colombia || Café Scegliere || Café Descafeinado</h3>
             </article>
             <article>
-                <h3><u>Cápsulas de Café Barista || Cápsulas de Café Scegliere || Cápsulas de Café Colombia || Cápsulas de Café Minka</u></h3>
+                <h3>Cápsulas de Café Barista || Cápsulas de Café Scegliere || Cápsulas de Café Colombia || Cápsulas de Café Minka</h3>
             </article>
         </section>
         <br>
 
- <!-- Sección de tutoriales -->
+<!-- Sección de tutoriales -->
         <section id="tutoriales">
             <p>Aprendé a hacer tu café como un experto</p>
             <article>
@@ -73,28 +65,28 @@
             <h2>¿CUÁL VAS A ELEGIR HOY?</h2>
             <article>
                 <h3>BARISTA</h3>
-                <p><blockquote>Nuestro tradicional house blend, el hijo prodigio de la casa. Granos provenientes de Brasil, nos permiten obtener este cafe pleno, de cuerpo medio, sin acidez ni amargor. Si lo vas a tomar en tu casa, te vas a sentir bien cerca de TIENDA.</blockquote></p>
+                <p>Nuestro tradicional house blend, el hijo prodigio de la casa. Granos provenientes de Brasil, nos permiten obtener este cafe pleno, de cuerpo medio, sin acidez ni amargor. Si lo vas a tomar en tu casa, te vas a sentir bien cerca de TIENDA.</p>
             </article>
             <article>
                 <h3>SCEGLIERE</h3>
-                <p><blockquote>Una combinación única, lograda por la combinación de tres varietales: Brasil Santos Mogiana, Colombia Supremo y Moka. Un café de cuerpo medio, levemente acidulado y estructuralmente complejo.</blockquote></p>
+                <p>Una combinación única, lograda por la combinación de tres varietales: Brasil Santos Mogiana, Colombia Supremo y Moka. Un café de cuerpo medio, levemente acidulado y estructuralmente complejo.</p>
             </article>
             <article>
                 <h3>MINKA</h3>
-                <p><blockquote>Este blend nos regala un café de gran cuerpo, con un sabor especiado. Si sos amante del café intenso, te vas a enamorar de nuestro Minka.</blockquote></p>
+                <p>Este blend nos regala un café de gran cuerpo, con un sabor especiado. Si sos amante del café intenso, te vas a enamorar de nuestro Minka.</p>
             </article>
-            <img src="cafe-pag.png" alt="cafeciiito" width="500" height="600">
+            <img src="images/cafe-pag.png" alt="cafeciiito" title="cafe con leite" width="500" height="600">
             <article>
                 <h3>COLOMBIA</h3>
-                <p><blockquote>Nuestro varietal clásico. Adentrate en las regiones colombianas con este café de cuerpo suave, gusto frutado, aroma floral y una delicada acidez. Inconfundible.</blockquote></p>
+                <p>Nuestro varietal clásico. Adentrate en las regiones colombianas con este café de cuerpo suave, gusto frutado, aroma floral y una delicada acidez. Inconfundible.</p>
             </article>
             <article>
                 <h3>DESCAFEINADO</h3>
-                <p><blockquote>Si querés disfrutar un exquisito café, pero reducir tu dosis diaria de cafeína, este es tu blend! Café originario de Colombia, suave, de cuerpo medio y un aroma que te invita a probarlo. Recomendado para aquellas personas sensibles a la cafeína.</blockquote></p>
+                <p>Si querés disfrutar un exquisito café, pero reducir tu dosis diaria de cafeína, este es tu blend! Café originario de Colombia, suave, de cuerpo medio y un aroma que te invita a probarlo. Recomendado para aquellas personas sensibles a la cafeína.</p>
             </article>
             <article>
                 <h3>BRASIL</h3>
-                <p><blockquote>Un café de cuerpo suave, y baja acidez hacen de BRASIL el ideal para tus preparaciones de café filtrado.</blockquote></p>
+                <p>Un café de cuerpo suave, y baja acidez hacen de BRASIL el ideal para tus preparaciones de café filtrado.</p>
             </article>
         </section>
         <br>
@@ -102,13 +94,12 @@
         <!-- Sección de locales -->
         <section id="locales">
             <h2>SIEMPRE HAY UN</h2>
-            <h1><strong>TIENDA CERCA TUYO</strong></h1> 
+            <h1>TIENDA CERCA TUYO</h1> 
             <p>Encontrá nuestra sucursal más cercana.</p>
             <a href="#local">Ingresar</a>
         </section>
         <br>
-       
-        <img src="logo-cafe.png" alt="logo de la tienda cafe" width="450" height="300">
+        <img src="images/logo-cafe.png" alt="logo de la tienda cafe" title="loguito" width="450" height="300">
         <!-- Sección trabajo con nosotros -->
         <footer class="footer">
         <div class="footer-container">
@@ -140,7 +131,7 @@
                 
                 <form class="subscription-form">
                     <div class="form-group">
-                        <input type="text" class="form-input" placeholder="Tu nombre" required>
+                        <input type="text" class="form-input" placeholder="Tu nombre" required minlength="3">
                     </div>
                     <div class="form-group">
                         <input type="email" class="form-input" placeholder="Tu email" required>
