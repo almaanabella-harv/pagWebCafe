@@ -10,47 +10,52 @@
 <body>
     <!-- Header con navegación principal -->
     <header class="header">
-        <div class="logo">
-            <h1>TIENDA DE CAFÉ</h1> <!-- Logo/título principal -->
-        </div> 
         <nav class="nav"> <!-- Navegación principal horizontal -->
-            <ul> 
-                <li><a href="cafe-nuestro.html" target="_blank">NUESTRO CAFÉ</a></li> 
-                <li><a href="tutoriales.html" title="Tutoriales" target="_blank">TUTORIALES</a></li> 
-                <li><a href="#locales">LOCALES</a></li> 
-                <li><a href="#menu">NUESTRO MENÚ</a></li>
-                <li><a href="#trabajo">TRABAJÁ CON NOSOTROS</a></li> 
-                <li><a href="#franquicias">FRANQUICIAS</a></li> 
-                <li><a href="#contacto">CONTACTO</a></li> 
-            </ul> 
+            <div class="navidv">
+                <div class="logo-section">
+                    <h1>TIENDA<br><span class="subtitle"> DE CAFÉ</span></h1>
+                <ul> 
+                    <li><a href="cafe-nuestro.html" target="_blank">NUESTRO CAFÉ</a></li> 
+                    <li><a href="tutoriales.html" title="Tutoriales" target="_blank">TUTORIALES</a></li> 
+                    <li><a href="#locales">LOCALES</a></li> 
+                    <li><a href="#menu">NUESTRO MENÚ</a></li>
+                    <li><a href="#trabajo">TRABAJÁ CON NOSOTROS</a></li> 
+                    <li><a href="#franquicias">FRANQUICIAS</a></li> 
+                    <li><a href="#contacto">CONTACTO</a></li> 
+                </ul>
+            </div> 
         </nav>
-            <button class="botonHamburguesa">
-                <div class="linea"></div>
-            </button>
     </header>
 
-    <!-- Sección principal/hero con imagen de fondo -->
-    <main>
-        <section> <!-- Sección hero principal -->
-            <h2>Tu café preferido</h2>
-            <h1>SIEMPRE CERCA</h1> <!-- Título más grande -->
-            <p>Blends, varietales, cafés del mundo.</p>
-            <p>Encontrá tu Tienda mas cercana y tentate con nuestros sabores.</p>
-            <a href="#locales">ENCONTRANOS</a> <!-- Botón principal -->
-        </section>
+    <section id="nuestro-cafe">
+        <h2>Nuestros Productos</h2>
+    <div class="productos-grid">
+        <div class="producto">
+            <img src="images/Productos_cafe_packs_BRASIL_frente-600x600.jpg" alt="Café Brasil">
+            <p class="titulo">Café Brasil</p>
+        </div>
+    
+        <div class="producto">
+            <img src="images/Productos_cafe_packs_BARISTA_frente-600x600.jpg" alt="Café Barista">
+            <p class="titulo">Café Barista</p>
+        </div>
+    
+        <div class="producto">
+            <img src="images/Productos_cafe_packs_MINKA_frente-600x600.jpg" alt="Café Minka">
+            <p class="titulo">Café Minka</p>
+        </div>
+    
+        <div class="producto">
+            <img src="images/Productos_cafe_packs_COLOMBIA_frente-600x600.jpg" alt="Café Colombia">
+            <p class="titulo">Café Colombia</p>
+        </div>
 
-        <!-- Sección de productos/categorías -->
-        <section id="nuestro-cafe">
-            <h2>Nuestros Productos</h2>
-            <!-- Aquí iría la información sobre los tipos de café -->
-            <article>
-                <h3>Café Brasil || Café Barista || Café Minka || Café Colombia || Café Scegliere || Café Descafeinado</h3>
-            </article>
-            <article>
-                <h3>Cápsulas de Café Barista || Cápsulas de Café Scegliere || Cápsulas de Café Colombia || Cápsulas de Café Minka</h3>
-            </article>
-        </section>
-        <br>
+        <div class="producto">
+            <img src="images/Productos_cafe_packs_SCEGLIERE_frente-600x600.jpg" alt="Café Colombia">
+            <p class="titulo">Café Scegliere</p>
+        </div>
+    </div>
+</section>
 
 <!-- Sección de tutoriales -->
         <section id="tutoriales">
@@ -69,7 +74,7 @@
 
 <!-- Sección de menú -->
         <section id="menu">
-            <p style="background-color: hsla(32, 100%, 50%, 0.5);"> NUESTRO CAFÉ </p>
+            <p> NUESTRO CAFÉ </p>
             <h2>¿CUÁL VAS A ELEGIR HOY?</h2>
             <article>
                 <h3>BARISTA</h3>

@@ -1,12 +1,172 @@
-h1{
-    color: wheat;
+/* ===== Reset / básicos ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
-a {
+/* Header: contenedor de la barra */
+.header {
+    position: fixed;
+    height: 78px;
+    width:100%;
+    z-index: 100; /* para cuadno se scrolee se continue viendo esta columna*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #eee;
+    background: #1a1a1a;
+    padding: 11px 0 5px 0;
+    padding-top: 11px;
+}
+
+/* .logo-section ocupa todo el header (para poder posicionar h1 a la izquierda y ul centrado) */
+.logo-section {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+/* Logo textual: lo fijamos a la izquierda y centrado verticalmente */
+.logo-section h1 {
+    position: absolute;
+    left: 30px;             /* separación del borde izquierdo */
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0;
+    color: #fff;
+    font-size: 28px;        /* ajustá tamaño */
+    line-height: 1;
+    font-weight: 800;
+}
+
+/* Si querés diferenciar el subtítulo */
+.logo-section .subtitle {
+    display: block;
+    font-weight: 400;
+    font-size: 0.65em;
+    letter-spacing: 0.5px;
+}
+
+/* Menú: lo centramos exactamente en el header */
+.logo-section ul {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); /* centra horizontal y verticalmente */
+    display: flex;
+    gap: 20px;              /* espacio entre items, ajustá si hace falta */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    white-space: nowrap;    /* evita saltos de línea en los links */
+}
+
+/* Links */
+.logo-section ul li a {
+    color: #fff;
     text-decoration: none;
-    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 12px;
+    display: inline-block;
+    padding: 6px 4px;
 }
 
-.botonHamburguesa {
-    display: none;
+.inicio {
+    margin-top: auto;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 10%;
+    color: white;
+    background-image: url('https://tiendadecafe.com.ar/wp-content/uploads/2021/03/sidebar_cafe01.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.inicio::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;  
+}
+
+.contenido-inicio{
+    position: relative;
+    z-index: 2;
+}
+
+.contenido-inicio p:first-of-type {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.contenido-inicio h2{
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 20px;    
+}
+
+.contenido-inicio p:last-of-type {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 30px;    
+}
+
+.btnEncontranos, .button {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 12px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btnEncontranos:hover {
+    background-color: white;
+    color: #402d1a;
+}
+
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 36px;
+  align-items: start;
+  margin-top: 36px;
+}
+
+/* Tarjeta producto */
+.producto {
+  background: #f5f5f5;
+  padding: 22px;
+  text-align: center;
+  border-radius: 2px;
+  box-shadow: 0 2px 0 rgba(0,0,0,0.03);
+}
+
+.producto img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 18px;
+}
+
+.producto .titulo {
+  font-weight: 700;
+  font-size: 15px;
+  color: #222;
 }
